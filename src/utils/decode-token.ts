@@ -1,7 +1,7 @@
 import { Request } from "express";
 import * as jwt from 'jsonwebtoken';
 import { secret } from "src/config";
-import { userResponseFactory, UserResponse } from "src/models/responses/auth/user.response.model";
+import { userResponseFactory, UserResponse } from "../models/responses/auth/user.response.model";
 
 export function decodeToken(req: Request): UserResponse {
 
