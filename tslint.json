@@ -13,7 +13,8 @@
     "interface-name": [false],
     "arrow-parens": false,
     "object-literal-sort-keys": false,
-    "disable-next-line": false,
+    "no-trailing-whitespace": false,
+    "no-consecutive-blank-lines": false
   },
   "rulesDirectory": []
 }
