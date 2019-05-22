@@ -8,11 +8,11 @@ async function bootstrap() {
 
 
   const app = await NestFactory.create<NestExpressApplication>( AppModule );
+  app.enableCors();
 
 
   if ( process.env.NODE_ENV === 'development' ) {
     app.use(setHeadersMiddleware);
-    app.enableCors();
   }
   
 
